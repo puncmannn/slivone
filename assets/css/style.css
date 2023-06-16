@@ -1,10 +1,3 @@
-/**
-* Template Name: Ninestars
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -761,6 +754,66 @@ color: #002F35;
   color: #FFFFFF;
 }
 
+.services .icon-box-else {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 40px 0;
+  background: #002F35;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.services .icon-box-else:hover {
+  background: #fff ;
+}
+
+.services .icon-box-else h4 {
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #FFFFFF ;
+  text-align: center;
+}
+
+.services .icon-box-else:hover h4 {
+  color: #002F35;
+}
+
+.services .icon-box-else p {
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 12px;
+  line-height: 15px;
+}
+
+.services .icon-box-else:hover p {
+  color: #002F35;
+}
+
+
+.services .icon-box-else .button-more {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #002F35;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  transition: 0.5s;
+  margin-bottom: 15px;
+  background: #FFFFFF;
+  border-radius: 36px;
+}  
+
+.services .icon-box-else .button-more:hover {
+  color: #8F8C79;
+}
+
 .services .icon img {
   margin: 15px;
 }
@@ -1099,6 +1152,7 @@ color: #002F35;
   font-size: 25px;
   font-weight: 700;
   color: #FFFFFF;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -1140,6 +1194,7 @@ color: #002F35;
   font-size: 45px;
   color: #002F35;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .contact h3 {
@@ -1150,10 +1205,22 @@ color: #002F35;
   text-align: center;
 }
 
+.contact h4 {
+  font-family: Montserrat;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #002F35;
+  text-align: center;
+}
+
 
 .contact p {
   margin-top: 5px;
   margin-bottom: 5px;
+  margin-right: 5px;
   font-size: 16px;
   font-weight: 400;
   color: #002F35;
@@ -1170,6 +1237,10 @@ color: #002F35;
   text-align: center;
 }
 
+
+.conact .contact-information-text {
+  margin-top: 30px;
+}
 
 .contact .info {
   border-top: 3px solid #eb5d1e;
@@ -1250,6 +1321,7 @@ color: #002F35;
   background: #F0EDE2;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   border-radius: 10px;
+  margin-top: 50px;
 }
 
 .contact .php-email-form .form-group {
@@ -1351,15 +1423,14 @@ color: #002F35;
 #footer p {
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   color: #FFFF;
   text-align: center;
 }
 
 #footer img {
-  margin-top: 15px;
-  align-content: space-between;
+  margin-top: 30px;
 }
 
 
