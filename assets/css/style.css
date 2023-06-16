@@ -371,7 +371,7 @@ h6,
   line-height: 56px;
   color: #FFFFFF;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 #hero h2 {
@@ -382,7 +382,7 @@ h6,
 }
 
 #hero p {
-  margin-top: 0px;
+  margin-left: 0px;
   padding-bottom: 0px;
   margin-bottom: 0px;
   position: relative;
@@ -430,6 +430,10 @@ h6,
 
   #hero .hero-img img {
     width: 50%;
+  padding: 0;
+  margin: 10px;
+  margin-bottom: 50px;
+
   }
 }
 
@@ -616,8 +620,14 @@ color: #002F35;
   color: #f39e7a;
 }
 
-.about .about-chat p {
-  margin-top: 5px;
+
+.about .profile-section {
+  margin-top: 30px;
+  }
+
+.about .about-chat a {
+  margin-top: px;
+  margin-left: 10px;
   display: inline-block;
   padding: 8px 28px;
   margin-bottom: 5px;
@@ -627,8 +637,23 @@ color: #002F35;
   color: #FFFFFF;
   background: #002F35;
   border-radius: 30px;
-
 }
+
+.about .about-chat:hover a {
+  margin-top: 0px;
+  margin-left: 10px;
+  display: inline-block;
+  padding: 8px 28px;
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: #002F35;
+  background: #F0EDE2;
+  border-radius: 30px;
+}
+
+
 
 @media (max-width: 991px) {
   .about .about-img img {
