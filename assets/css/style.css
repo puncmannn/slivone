@@ -20,7 +20,7 @@ a:hover {
 h1,
 h2,
 .font-primary {
-  font-family: "Gazpacho", serif;
+  font-family: "Gazpacho", normal;
   }
 h3,
 h4,
@@ -29,6 +29,18 @@ h6,
 .font-primary {
   font-family: "Montserrar", sans-serif;
 }
+
+@font-face {
+    font-family: 'Gazpacho';
+    src:  url('../fonts/Gazpacho_Bold.woff') format('woff'),
+          url('../fonts/Gazpacho_Bold.woff2') format('woff2'),
+          url('../fonts/Gazpacho_Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
 
 /*--------------------------------------------------------------
 # Back to top button
