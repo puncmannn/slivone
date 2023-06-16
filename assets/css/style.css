@@ -32,9 +32,9 @@ h6,
 
 @font-face {
     font-family: 'Gazpacho';
-    src:  url('https://github.com/puncmannn/slivone.github.io/raw/main/assets/fonts/Gazpacho_Bold.woff') format('woff'),
-          url('https://github.com/puncmannn/slivone.github.io/raw/main/assets/fonts/Gazpacho_Bold.woff2') format('woff2'),
-          url('https://github.com/puncmannn/slivone.github.io/raw/main/assets/fonts/Gazpacho_Bold.ttf') format('ttf');
+    src:  url('assets/fonts/Gazpacho_Bold.woff') format('woff'),
+          url('assets/fonts/Gazpacho_Bold.woff2') format('woff2'),
+          url('assets/fonts/Gazpacho_Bold.ttf') format('ttf');
     font-weight: 700;
     font-style: normal;
 
