@@ -32,9 +32,9 @@ h6,
 
 @font-face {
     font-family: 'Gazpacho';
-    src:  url('https://github.com/puncmannn/slivone.github.io/tree/main/assets/fonts/Gazpacho_Bold.woff') format('woff'),
-          url('https://github.com/puncmannn/slivone.github.io/tree/main/assets/fonts/Gazpacho_Bold.woff2') format('woff2'),
-          url('https://github.com/puncmannn/slivone.github.io/tree/main/assets/fonts/Gazpacho_Bold.ttf') format('ttf');
+    src:  url('https://github.com/puncmannn/slivone.github.io/raw/main/assets/fonts/Gazpacho_Bold.woff') format('woff'),
+          url('https://github.com/puncmannn/slivone.github.io/raw/main/assets/fonts/Gazpacho_Bold.woff2') format('woff2'),
+          url('https://github.com/puncmannn/slivone.github.io/raw/main/assets/fonts/Gazpacho_Bold.ttf') format('ttf');
     font-weight: 700;
     font-style: normal;
 
@@ -612,7 +612,7 @@ section {
 }
 
 .about h4 {
-font-family: "Gazpacho"; normal;
+font-family: "Gazpacho", normal;
 font-weight: 700;
 font-size: 30px;
 line-height: 36px;
@@ -1143,7 +1143,7 @@ color: #002F35;
 }
 
 .mission h4 {
-font-family: "Gazpacho"; normal;
+font-family: "Gazpacho", normal;
 font-weight: 700;
 font-size: 30px;
 line-height: 36px;
