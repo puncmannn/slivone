@@ -27,7 +27,7 @@ h4,
 h5,
 h6,
 .font-primary {
-  font-family: "Montserrar", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @font-face {
@@ -363,7 +363,6 @@ h6,
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
   background: #002F35;
   border-bottom: 2px solid #fcebe3;
   margin: 72px 0 -72px 0;
@@ -381,7 +380,7 @@ h6,
 
 #hero h2 {
   color: #9A863F;
-  margin: 15px 0 0 0;
+  margin: 15px 0 60px 0;
   font-size: 32px;
   text-align: center;
 }
@@ -404,16 +403,18 @@ h6,
   color: #000000;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 5px 20px;
+  padding: 8px 28px;
   transition: 0.5s;
-  margin-left: 10px;
-  background: linear-gradient(0deg, rgba(154, 134, 63, 0.15), rgba(154, 134, 63, 0.15)), #FFFFFF;
+  margin-left: 0px;
+  background: #8F8C79;
   border: 0.75px solid rgba(0, 45, 46, 0.2);
   border-radius: 71px;
+  justify-content: right;
+  text-decoration: none;
 }
 
 #hero .btn-get-started:hover {
-  background: #ef7f4d;
+  background: #656565;
 }
 
 #hero .animated {
@@ -482,8 +483,8 @@ h6,
 
 
 #hero .profile-section {
-    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #hero .profile-image {
@@ -493,7 +494,8 @@ h6,
 
 #hero .place-section {
     text-align: center;
-    margin-top: -70px;
+    justify-content: left;
+    margin-top: px;
 }
 
 
@@ -643,6 +645,7 @@ color: #002F35;
   color: #FFFFFF;
   background: #002F35;
   border-radius: 30px;
+  text-decoration: none;
 }
 
 .about .about-chat:hover a {
@@ -698,6 +701,7 @@ color: #002F35;
 }
 
 .services p {
+  font-size: ´Montserrat;
   font-size: 16px;
   color: #002F35;
   text-align: center;
@@ -760,11 +764,27 @@ color: #002F35;
   margin-bottom: 15px;
   background: #8F8C79;
   border-radius: 36px;
+  position: bottom;
 }  
 
 .services .icon-box .button-more:hover {
   color: #FFFFFF;
 }
+
+
+.serveces .icon-box .btn btn-primary {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #002F35;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  transition: 0.5s;
+  margin-bottom: 15px;
+  background: #8F8C79;
+  border-radius: 36px;
+} 
 
 .services .icon-box-else {
   padding: 30px;
@@ -794,6 +814,7 @@ color: #002F35;
   margin-bottom: 15px;
   border-radius: 36px;
   background: #F0EDE2;
+  position: bottom;
 }  
 
 .services .icon-box-else .button-more-else:hover {
@@ -847,6 +868,7 @@ color: #002F35;
 
 .services .icon img {
   margin: 15px;
+  height: 70px;
 }
 
 .services .title {
@@ -864,6 +886,41 @@ color: #002F35;
   line-height: 28px;
   margin-bottom: 0;
 }
+
+.services .modal-content h1{
+  font-family: Gazpacho;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 0;
+  line-height: 1px;
+  margin-top: 30px;
+  margin-left: 13px;
+  color: #9A863F;
+}
+
+.services .modal-content h6 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 0;
+  line-height: 1px;
+  margin-top: 30px;
+  margin-left: 13px;
+  color: #9A863F;
+  text-align: left;
+}
+
+.services .modal-content p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 0;
+  line-height: 24px;
+  margin-top: 30px;
+  color: #002F35;
+  text-align: left;
+}
+
 
 /*--------------------------------------------------------------
 # Proces
@@ -1017,7 +1074,7 @@ color: #002F35;
 .price .icon-box h4 {
   margin: 0px;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 24px;
   color: #002F35;
   text-align: center;

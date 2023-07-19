@@ -29,7 +29,13 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+  <!-- Add these links in the head section of your HTML file -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -75,23 +81,37 @@
         </div>
       </div>
 
-          <div class="container d-flex align-items-center justify-content-between info-position">
+
+
+      <div class="container" >
+          <div class="row gy-4">
+            <div class="fixed-bottom">...</div>
+
+              <div class="col-lg-4 order-1 order-lg-1 d-flex flex-column justify-content-center">
                 <div class="profile-section d-flex align-items-center">
                     <img src="assets/img/martin.png" class="profile-image">
                     <div>
                         <p>Jmenuji se <b>Martin Slivoně</b><br> a vaše starosti beru na sebe.</p>
                     </div>
                 </div>
+              </div>
 
-                <div>
+              <div class="col-lg-4 order-2 order-lg-2 d-flex flex-column justify-content-center">
+                <div class="place-section">
+                <p>Advokát<br> z <b>Prahy</b> a <b>Plzně</b></p></div>
+              </div>
+
+              <div class="col-lg-4 order-3 order-lg-3 d-flex justify-content-center">
+                <div class="row">
+                  <div class="align-items-center">
                   <a href="#services" class="btn-get-started scrollto">Služby</a>
                   <a href="#contact" class="btn-get-started scrollto">Kontakt</a>
+                  </div>
                 </div>
-          </div>
+              </div>
 
-          <div class="place-section">
-          <p>Advokát<br> z <b>Prahy</b> a <b>Plzně</b></p></div>
-
+            </div>
+      </div>
     </div>
 
   </section><!-- End Hero -->
@@ -119,66 +139,333 @@
               <h4>Občanské právo</h4>
               <div class="icon"><img src="assets/img/services/op.svg"></div>
               <p>Pomůžu vám vyřešit reklamace, vypracovat smluvní dokument a uplatnit vaše majetkové nároky, náhradu škody i dědická práva.</p>
-              <a href="" class="button-more">Zjistit více</a>
+
+              <button type="button" class="button-more" data-bs-toggle="modal" data-bs-target="#exampleModal_1">
+                Zjistit Více
+              </button>
             </div>
           </div>
+
+              <!-- Modal -->
+
+              <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel_2">Občanské právo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                          <h6> 1.  smluvní dokumenty</h6>
+                          <p>Bez smluv se občanskoprávní vztahy neobejdou. Potřebujete nějakou vytvořit?</p>
+                          <hr />
+                          <h6>2.  půjčky a zápůjčky</h6>
+                          <p>Když je potřeba změnit nebo ukončit vztah věřitel vs. dlužník.</p>
+                          <hr />
+                          <h6>3.  právní rozbory</h6>
+                          <p>Když si to situace žádá, píšu právní stanoviska a rozbory.</p>
+                          <hr />
+                          <h6>4.  zastoupení v řízení</h6>
+                          <p>Zastoupím vás v občanskoprávních sporech.</p>
+                          <hr />
+                          <h6>5.  majetek</h6>
+                          <p>Pomůžu vám s uplatněním vašich majetkových nároků.</p>
+                          <hr />
+                          <h6>6.  škodní nároky</h6>
+                          <p>Když vznikne škoda, máte nárok na náhradu. Třeba v případě ublížení na zdraví.</p>
+                          <hr />
+                          <h6>7.  ochrana osobnosti</h6>
+                          <p>Nenechte si líbit zásah do pověsti.</p>
+                          <hr />
+                          <h6>8.  ochrana spotřebitele</h6>
+                          <p>Problematikou se zabývám komplexně, včetně tvorby obchodních podmínek pro e-shopy.</p>
+                          <hr />
+                          <h6>9.  dědické právo</h6>
+                          <p>Ať už v souvislosti s dědictvím řešíte cokoli, pomůžu vám.</p>
+                  </div>
+                </div>
+                </div>
+              </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <h4>Trestní právo</h4>
               <div class="icon"><img src="assets/img/services/tp.svg"></div>
               <p>Jsem tu, kdykoli se dostanete do potíží. Budete se moci spolehnout na kvalitní obhajobu a zastoupení před soudy či orgány v trestním řízení.</p>
-              <a href="" class="button-more">Zjistit více</a>
+              
+              <button type="button" class="button-more" data-bs-toggle="modal" data-bs-target="#exampleModal_2">
+                Zjistit Více
+              </button>
             </div>
           </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel_2">Trestní právo</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <h6> 1. právní posudky</h6>
+                    <p>Součástí mé práce je tvorba odborných trestněprávních posudků.</p>
+                    <hr />
+                    <h6> 2.  trestní oznámení</h6>
+                    <p>Chcete podat trestní oznámení? Od toho jsem tu.</p>
+                    <hr />
+                    <h6> 3.  obhajoba</h6>
+                    <p>Poskytnu vám právní pomoc v přípravném řízení i obhajobu před soudem.</p>
+                    <hr />
+                    <h6> 4.  zastupování poškozených</h6>
+                    <p>Zastupuji také poškozené a jejich právo na náhradu škody, která jde na vrub pachatele.</p>
+                    <hr />
+                    <h6> 5.  podmínečné propuštění</h6>
+                    <p>Potřebujete právní pomoc při podání žádosti o podmíněné propuštění? Máte ji mít.</p> 
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <h4>Obchodní právo</h4>
               <div class="icon"><img src="assets/img/services/obchodni_pravo.svg"></div>
               <p>Poradím si s převodem akcií, zakládáním firem i vymáháním škod po statutárních orgánech. Poradím ale i vám – podnikatelům – kdykoli to bude třeba.</p>
-              <a href="" class="button-more">Zjistit více</a>
+
+              <button type="button" class="button-more" data-bs-toggle="modal" data-bs-target="#exampleModal_3">
+                Zjistit Více
+              </button>
+
             </div>
           </div>
+              
+                <!-- Modal -->
+                  <div class="modal fade" id="exampleModal_3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel_2">Obchodní právo</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"> 
+                        <h6>1.  zakládání společnosti</h6>
+                        <p>Komplexní věc, kterou je potřeba udělat správně. Provedu vás celým procesem.</p>
+                        <hr />
+                        <h6>2.  převody podílů</h6>
+                        <p>Postarám se o bezproblémový převod obchodního podílu a akcií.</p>
+                        <hr />
+                        <h6>3.  změna dokumentů a stanov</h6>
+                        <p>Nechte na mě také změnu zakládajících dokumentů a stanov společnosti.</p>
+                        <hr />
+                        <h6>4.  likvidace společnosti</h6>
+                        <p>Když chcete své podnikání dobrovolně ukončit, pomůžu vám krok po kroku.</p>
+                        <hr />
+                        <h6>5.  smluvní agenda</h6>
+                        <p>Připravím vám smlouvy ve všech oblastech obchodního práva.</p>
+                        <hr />
+                        <h6>6.  sporná agenda</h6>
+                        <p>Kdykoli se dostanete do sporu, je důležité mít právníka, o kterého se můžete opřít.</p>
+                        <hr />
+                        <h6>7.  vymáhání směnek</h6>
+                        <p>Správně vypsaná směnka je prvním krokem k úspěchu. Druhým je dobrý advokát.</p>
+                        <hr />
+                        <h6>8.  vymáhání škody</h6>
+                        <p>Věnuji se také vymáhání škod, které klientům způsobily statutární orgány.</p>
+                        <hr />
+                        <h6>9.  právní poradenství</h6>
+                        <p>Pro radu v oblasti každodenního provozu si ke mně chodí malí a střední podnikatelé.</p>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
               <h4>Nemovitosti</h4>
               <div class="icon"><img src="assets/img/services/nem.svg"></div>
               <p>Nejčastěji se na mě obracíte při převodu nemovitostí nebo kvůli sepisu a revizi smluv – ať už jsou rezervační, kupní, nebo nájemní.</p>
-              <a href="" class="button-more">Zjistit více</a>
+
+              <button type="button" class="button-more" data-bs-toggle="modal" data-bs-target="#exampleModal_4">
+                Zjistit Více
+              </button>
+
             </div>
           </div>
 
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal_4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel_2">Trestní právo</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <h6>1.  převody nemovitostí<h6>
+                    <p>Pomáhám s převodem nemovitostí do nových rukou a poskytuji advokátní úschovy.</p>
+                    <hr />
+                    <h6>2.  smlouvy<h6>
+                    <p>Rezervační, kupní, darovací nebo nájemní? Sepíšu je všechny, chcete-li.</p>
+                    <hr />
+                    <h6>3.  podílové spoluvlastnictví<h6>
+                    <p>Svěřit mi můžete i vypořádání podílového spoluvlastnictví.</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
         </div>
 
-                <div class="row">
+        <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <h4>Správní právo</h4>
               <div class="icon"><img src="assets/img/services/spravni_pravo.svg"></div>
               <p>Zastoupím vás ve správním řízení a při podání žaloby proti rozhodnutí správního orgánu, včetně změny či zrušení územního plánu.</p>
-              <a href="" class="button-more">Zjistit více</a>
+               <button type="button" class="button-more" data-bs-toggle="modal" data-bs-target="#exampleModal_5">
+                Zjistit Více
+              </button>
+
             </div>
           </div>
+
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal_5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel_2">Správní právo </h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <h6>1.  zastoupení v řízení<h6>
+                    <p>Klienty zastupuji v přestupkovém řízení i před správními orgány.</p>
+                    <hr />
+                    <h6>2.  vybodování řidiče<h6>
+                    <p>Pokud vám hrozí ztráta řidičského průkazu, nabízím svou pomoc.</p>
+                    <hr />
+                    <h6>3.  dopravní nehody<h6>
+                    <p>Ve správních řízeních zastupuji také účastníky dopravních nehod. </p>
+                    <hr />
+                    <h6>4.  správní žaloby<h6>
+                    <p>Součástí mé práce je sepis správních žalob.</p>
+                    <hr />
+                    <h6>5.  územní plán<h6>
+                    <p>Budu vaší právní oporou při jednáních o změně či zrušení územního plánu. </p>
+                    <hr />
+                    <h6>6.  blokování staveb<h6>
+                    <p>Soustředím se také na spory, v nichž jedna ze stran blokuje stavbu.</p>
+                    <hr />
+                    <h6>7.  pozemkové úpravy<h6>
+                    <p>Klienty zastupuji rovněž v řízení o pozemkových úpravách.</p>
+                    <hr />
+                    <h6>8.  životní prostředí<h6>
+                    <p>Říká vám něco proces posouzení vlivu na životní prostředí? Nebojte, mně ano.</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <h4>Smlouvy</h4>
               <div class="icon"><img src="assets/img/services/smlouvy.svg"></div>
               <p>Smlouvy svěřte odborníkovi. Rád vám je sepíšu, poskytnu právní analýzu a poradím při jejich uzavírání, změnách nebo ukončení.</p>
-              <a href="" class="button-more">Zjistit více</a>
+               <button type="button" class="button-more" data-bs-toggle="modal" data-bs-target="#exampleModal_6">
+                Zjistit Více
+              </button>
+
             </div>
           </div>
+
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal_6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel_2">Správní právo </h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <h6>1.  tvorba smluv<h6>
+                    <p>Ať už potřebujete sepsat jakoukoli smlouvu, nechte to na mě.</p>
+                    <hr />
+                    <h6>2.  poradenství<h6>
+                    <p>Uzavíráte nebo ukončujete smluvní vztah? Na jednáních vás rád zastoupím.</p>
+                    <hr />
+                    <h6>3.  právní analýzy a revize<h6>
+                    <p>Posoudím, jaká práva a povinnosti ze smluv plynou a jak závazky ukončit.</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <h4>Pracovní právo</h4>
               <div class="icon"><img src="assets/img/services/pracovni_pravo.svg"></div>
               <p>Jsem tu, když chcete vytvořit spolehlivou pracovní smlouvu, odejít se solidním odstupným nebo najmout vedoucího zaměstnance.</p>
-              <a href="" class="button-more">Zjistit více</a>
+               <button type="button" class="button-more" data-bs-toggle="modal" data-bs-target="#exampleModal_7">
+                Zjistit Více
+              </button>
+
             </div>
           </div>
+
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal_7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel_2">Pracovní právo</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <h6>1.  smlouvy<h6>
+                    <p>Pomůžu vám vytvořit pracovní smlouvu i smlouvu pro jednatele a manažery.</p>
+                    <hr />
+                    <h6>2.  vedoucí zaměstnanci<h6>
+                    <p>Když chcete uzavřít nebo ukončit smlouvu s vedoucím zaměstnancem, ozvěte se.</p>
+                    <hr />
+                    <h6>3.  dohody o odstupném<h6>
+                    <p>Potřebujete ukončit pracovní poměr a chcete dohodu, která bude vyhovovat vám?</p>
+                    <hr />
+                    <h6>4.  pracovněprávní spory<h6>
+                    <p>Pomůžu vám vyhrát pracovněprávní spory</p>
+                    <hr />
+                    <h6>5.  právní posudky<h6>
+                    <p>Součástí mé práce je tvorba odborných pracovněprávních posudků.</p>
+                    <hr />
+                    <h6>6.  zastupování klientů<h6>
+                    <p>Klienty zastupuji před oblastními inspektoráty práce i cizineckou policií</p>
+                    <hr />
+                    <h6>7.  pracovní úrazy<h6>
+                    <p>Nepříjemnost, která by se stávat neměla. Pojďme vyjednat odpovídající odškodnění.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box-else">
@@ -268,15 +555,15 @@
         <div class="row justify-content-center">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <h4>Úvodní</h4> <div class="bold"><h4>schůzka</h4></div>
-              <p>Za úvodní setkání neplatíte vůbec nic.</p>
+              <h4>Úvodní<br> schůzka</h4>
+              <p>Za úvodní setkání <br>neplatíte vůbec nic.</p>
               <div class="bold"><p>Zdarma</p></div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <h4>Právní</h4> <div class="bold"><h4>služby</h4></div>
+              <h4>Právní<br> služby</h4>
               <p>Klientům účtuji hodinovou sazbu 2&nbsp;200–3 000&nbsp;Kč  podle složitosti případu. Cena zahrnuje všechny náklady s výjimkou cestovného (10&nbsp;Kč/km) a promeškaného času (1&nbsp;100&nbsp;Kč/h). Nejsem plátcem DPH, částka je tedy finální.</p>
               <div class="bold"><p>2&nbsp;200–3&nbsp;000 Kč</p></div>
             </div>
@@ -284,7 +571,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <h4>Obhajoba</h4> <div class="bold"><h4>v trestním řízení</h4></div>
+              <h4>Obhajoba<br> v trestním řízení</h4>
               <p>S obhajobou mám díky práci pod vedením advokáta Sokola zkušenosti, za něž klienti platí hodinovku 3&nbsp;000–4 000 Kč podle trestní sazby, která jim hrozí. Cena zahrnuje všechny náklady s&nbsp;výjimkou cestovného (10&nbsp;Kč/km) a&nbsp;promeškaného času (1&nbsp;500&nbsp;Kč/h). Nejsem plátcem DPH, částka je tedy finální.</p>
               <div class="bold"><p>3&nbsp;000–4&nbsp;000 Kč</p></div>
             </div>
@@ -391,7 +678,7 @@
                   <input type="text" name="name" class="form-control" id="name" placeholder="Jméno a Příjmení" required>
                 </div>
                 <div class="form-group col-md-6 mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Jméno a Příjmení" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
@@ -439,6 +726,8 @@
   </footer><!-- End Footer -->
 
 
+
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -465,11 +754,11 @@
         .typeString('trestního práva?')
         .pauseFor(1800)
         .deleteChars(16)
-        .typeString('trestního práva?')
+        .typeString('obchodního práva?')
+        .deleteChars(17)
+        .typeString('osprávního práva?')
         .start();
   </script>
-
-
 
 
 </body>
