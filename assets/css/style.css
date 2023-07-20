@@ -721,6 +721,9 @@ color: #002F35;
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
   text-align: center;
+  display: flex; /* Use flexbox to align children vertically */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Put space between the elements, moving the price element to the bottom */
 }
 
 .services .icon-box:hover {
@@ -752,6 +755,7 @@ color: #002F35;
   color: #FFFFFF;
 }
 
+
 .services .icon-box .button-more {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -764,27 +768,18 @@ color: #002F35;
   margin-bottom: 15px;
   background: #8F8C79;
   border-radius: 36px;
-  position: bottom;
-}  
+  box-sizing: content-box;
+  outline: none !important;
+  box-shadow: none !important;
+  text-decoration: none;
+}
+
 
 .services .icon-box .button-more:hover {
   color: #FFFFFF;
 }
 
 
-.serveces .icon-box .btn btn-primary {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  color: #002F35;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  transition: 0.5s;
-  margin-bottom: 15px;
-  background: #8F8C79;
-  border-radius: 36px;
-} 
 
 .services .icon-box-else {
   padding: 30px;
@@ -796,6 +791,9 @@ color: #002F35;
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
   text-align: center;
+  display: flex; /* Use flexbox to align children vertically */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Put space between the elements, moving the price element to the bottom */
 }
 
 .services .icon-box-else:hover {
@@ -815,6 +813,7 @@ color: #002F35;
   border-radius: 36px;
   background: #F0EDE2;
   position: bottom;
+  text-decoration: none;
 }  
 
 .services .icon-box-else .button-more-else:hover {
@@ -963,6 +962,7 @@ color: #002F35;
 .proces .icon-box {
   padding: 30px;
   position: relative;
+  width: 100%;
   overflow: hidden;
   margin: 0 0 40px 0;
   background: #fff;
@@ -970,6 +970,9 @@ color: #002F35;
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
   text-align: center;
+  display: flex; /* Use flexbox to align children vertically */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Put space between the elements, moving the price element to the bottom */
 }
 
 
@@ -995,7 +998,7 @@ color: #002F35;
 .proces .icon p {
   margin: 15px;
   font-family: Gazpacho;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 700;
   padding-bottom: 0;
   line-height: 1px;
@@ -1046,6 +1049,7 @@ color: #002F35;
   line-height: 56px;
   color: #002F35;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .price p {
@@ -1061,6 +1065,7 @@ color: #002F35;
 .price .icon-box {
   padding: 30px;
   position: relative;
+  width: 100%;
   overflow: hidden;
   margin: 0 0 40px 0;
   background: #fff;
@@ -1068,11 +1073,13 @@ color: #002F35;
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
   text-align: center;
+  display: flex; /* Use flexbox to align children vertically */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Put space between the elements, moving the price element to the bottom */
 }
 
-
 .price .icon-box h4 {
-  margin: 0px;
+  margin: 0;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1085,6 +1092,7 @@ color: #002F35;
 }
 
 .price .icon-box .bold p {
+  font-family: Montserrat;
   font-weight: 700;
   font-size: 20px;
 }
@@ -1097,16 +1105,8 @@ color: #002F35;
   line-height: 15px;
 }
 
-
-.price .icon p {
-  margin: 15px;
-  font-family: Gazpacho;
-  font-size: 30px;
-  font-weight: 700;
-  padding-bottom: 0;
-  line-height: 1px;
-  margin: 40px;
-  color: #9A863F;
+.price .icon-box .bold p {
+  margin-top: auto; /* Push the element to the bottom */
 }
 
 .price .title {
@@ -1178,15 +1178,23 @@ color: #002F35;
   text-align: center;
 }
 
+
+@media (max-width: 1400px) {
+  .me img {
+    max-width: 85%;
+  }
+}
+
+
 @media (max-width: 991px) {
-  .about .about-img img {
-    max-width: 70%;
+  .me img {
+    max-width: 75%;
   }
 }
 
 @media (max-width: 767px) {
-  .about .about-img img {
-    max-width: 90%;
+  .me img {
+    max-width: 65%;
   }
 }
 
@@ -1243,18 +1251,26 @@ color: #002F35;
   text-align: center;
 }
 
+
+
+@media (max-width: 1400px) {
+  .mission img {
+    max-width: 85%;
+  }
+}
+
+
 @media (max-width: 991px) {
-  .about .about-img img {
-    max-width: 70%;
+  .mission img {
+    max-width: 75%;
   }
 }
 
 @media (max-width: 767px) {
-  .about .about-img img {
-    max-width: 90%;
+  .mission img {
+    max-width: 65%;
   }
 }
-
 
 
 /*--------------------------------------------------------------
