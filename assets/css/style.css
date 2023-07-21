@@ -121,6 +121,9 @@ h6,
   margin-top: 72px;
 }
 
+
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -411,6 +414,8 @@ h6,
   border-radius: 71px;
   justify-content: right;
   text-decoration: none;
+  margin-top: 20px;
+  align-items: center;
 }
 
 #hero .btn-get-started:hover {
@@ -423,7 +428,7 @@ h6,
 
 @media (max-width: 991px) {
   #hero {
-    height: calc(100vh - 72px);
+    height: calc(100vh);
   }
 
   #hero .animated {
@@ -443,6 +448,33 @@ h6,
   }
 }
 
+@media (max-width: 1400px) {
+  #hero img {
+    max-width: 85%;
+  }
+}
+
+
+@media (max-width: 991px) {
+  #hero img {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 767px) {
+  #hero img {
+    max-width: 65%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+}
+
+
+
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
@@ -459,15 +491,10 @@ h6,
   }
 }
 
-@media (max-width: 575px) {
-  #hero .hero-img img {
-    width: 80%;
-  }
-}
 
 @media (max-height: 600px) {
   #hero {
-    height: 120vh;
+    width: 100%;
   }
 }
 
@@ -488,6 +515,7 @@ h6,
 }
 
 #hero .profile-image {
+    width: 72px;
     margin-right: 20px;
 }
 
@@ -632,6 +660,12 @@ color: #002F35;
 .about .profile-section {
   margin-top: 30px;
   }
+
+.about .profile-image {
+    width: 72px;
+    margin-right: 20px;
+}
+
 
 .about .about-chat a {
   margin-top: px;
@@ -1179,6 +1213,12 @@ color: #002F35;
 }
 
 
+.me img {
+  border-radius: 16px;
+  }
+}
+
+
 @media (max-width: 1400px) {
   .me img {
     max-width: 85%;
@@ -1251,6 +1291,10 @@ color: #002F35;
   text-align: center;
 }
 
+.mission img {
+  border-radius: 16px;
+  }
+}
 
 
 @media (max-width: 1400px) {
