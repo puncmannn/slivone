@@ -711,6 +711,7 @@ color: #002F35;
   }
 }
 
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -1161,15 +1162,15 @@ color: #002F35;
 }
 
 
-/*--------------------------------------------------------------
-# Me
---------------------------------------------------------------*/
 
-.me {
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
   background: #D3D2C5;
 }
 
-.me h1  {
+.about h1  {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 300;
@@ -1181,7 +1182,7 @@ color: #002F35;
 }
 
 
-.me h2 {
+.about h2 {
   font-family: "Gazpacho", normal;
   font-weight: 700;
   font-size: 45px;
@@ -1189,22 +1190,8 @@ color: #002F35;
   text-align: center;
 }
 
-.me h4 {
-  font-family: "Gazpacho", normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  color: #002F35;
-}
 
-.me i {
-  font-size: 48px;
-  margin-top: 15px;
-  color: #f39e7a;
-}
-
-.me p {
+.about p {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 16px;
@@ -1213,31 +1200,20 @@ color: #002F35;
   text-align: center;
 }
 
-
-.me img {
-  border-radius: 16px;
-  }
-}
-
-
-@media (max-width: 1400px) {
-  .me img {
-    max-width: 85%;
-  }
-}
-
-
 @media (max-width: 991px) {
-  .me img {
-    max-width: 75%;
+  .about .about-img img {
+    max-width: 70%;
   }
 }
 
 @media (max-width: 767px) {
-  .me img {
-    max-width: 65%;
+  .about .about-img img {
+    max-width: 90%;
   }
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Mission
@@ -1316,6 +1292,64 @@ color: #002F35;
     max-width: 65%;
   }
 }
+
+
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+
+.clients h1  {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 0;
+  line-height: 1px;
+  margin-bottom: 30px;
+  color: #9A863F;
+}
+
+
+.clients h2 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #002F35;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+
+.clients .clients-slider .swiper-slide img {
+  opacity: 0,5;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.clients .clients-slider .swiper-slide img:hover {
+  opacity: 1;
+  filter: none;
+}
+
+.clients .clients-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .clients-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #002F35;
+}
+
+.clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #002F35;
+}
+
 
 
 /*--------------------------------------------------------------
