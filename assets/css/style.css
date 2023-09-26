@@ -558,7 +558,7 @@ section {
   font-size: 24px;
   font-weight: 700;
   padding-bottom: 0;
-  line-height: 1px;
+  line-height: 0px;
   margin-bottom: 15px;
   color: #c2b7b1;
 }
@@ -577,7 +577,7 @@ section {
   position: absolute;
   display: block;
   width: 60px;
-  height: 2px;
+  height: 0px;
   background: #eb5d1e;
   bottom: 0;
   left: calc(50% - 30px);
@@ -1320,7 +1320,14 @@ color: #002F35;
   margin-bottom: 30px;
 }
 
-
+.clients p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #002F35;
+  text-align: center;
+}
 
 .clients .clients-slider .swiper-slide img {
   opacity: 0,5;
